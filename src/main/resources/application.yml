@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo
+
+app:
+  message: ${APP_MESSAGE:Hello from application.yml}
+  repeat: ${APP_REPEAT:4}
