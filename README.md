@@ -5,7 +5,7 @@
 ```kotlin
 dependencies {
     implementation(platform("me.paulschwarz:spring-dotenv-bom:5.0.1"))
-    implementation("me.paulschwarz:springboot4-dotenv")
+    developmentOnly("me.paulschwarz:springboot4-dotenv")
 }
 ```
 

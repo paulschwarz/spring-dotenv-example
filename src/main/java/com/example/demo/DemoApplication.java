@@ -21,7 +21,7 @@ public class DemoApplication {
 
     @ConfigurationProperties(prefix = "app")
     public record AppProps(
-            String message,
+            String greetingMessage,
             int repeat
     ) {}
 
@@ -29,7 +29,7 @@ public class DemoApplication {
     CommandLineRunner runner(AppProps props) {
         return args -> {
             for (int i = 0; i < props.repeat(); i++) {
-                log.info("app.message = {}", props.message());
+                log.info("app.greetingMessage = {}", props.greetingMessage());
             }
         };
     }

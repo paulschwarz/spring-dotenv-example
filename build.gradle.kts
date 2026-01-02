@@ -20,12 +20,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	implementation(platform("me.paulschwarz:spring-dotenv-bom:5.0.1"))
-	implementation("me.paulschwarz:springboot4-dotenv")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-}
-
-tasks.withType<Test> {
-	useJUnitPlatform()
+	implementation(platform("me.paulschwarz:spring-dotenv-bom:5.1.0"))
+	developmentOnly("me.paulschwarz:springboot4-dotenv")
 }

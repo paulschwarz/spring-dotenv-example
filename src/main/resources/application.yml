@@ -3,5 +3,8 @@ spring:
     name: demo
 
 app:
-  message: ${APP_MESSAGE:Hello from application.yml}
+  greeting-message: Hello from application.yml
   repeat: ${APP_REPEAT:4}
+
+springdotenv:
+  enabled: on
